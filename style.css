@@ -1,0 +1,138 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+h1, h2, h3 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: bold;
+}
+
+p, ul, li, button, form, a {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Boutons */
+.cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 16px;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  background: #F2FF46;
+  border-radius: 100px;
+  border: none;
+  justify-content: space-evenly;
+  min-width: 175px;
+}
+
+/* Navigation */
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 140px;
+    gap:40px;
+  }
+  
+  .menu-left, .menu-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:40px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #1A3837;
+  }
+  
+  .logo img {
+    max-width: 150px;
+  }
+  
+  .phone-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1A3837;
+    font-weight: bold;
+    min-width: 140px;
+  }
+
+
+/* Hero */
+.hero {
+  background-color: #F2F2F2; 
+  text-align: center;
+  display: flex;
+  align-content: flex-end;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 120px 140px;
+}
+
+.hero-content h1 {
+  font-size: 80px;
+  color: #272729;
+  text-align: center;
+}
+
+.description {
+  font-size: 18px;
+  color: #272729; 
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Display cartes produits */
+.product-display {
+  background-color: #7C4DFF; /* ou toute autre couleur violette correspondante */
+  padding: 20px;
+  text-align: center;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product-card {
+  border: solid white; /* Ajustez la largeur selon les besoins */
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Ajustez la taille et la couleur selon les besoins */
+}
+
+.product-card img {
+  width: auto; /* Ajustez en fonction des exigences de taille réelles */
+  height: auto; /* Ajustez en fonction des exigences de taille réelles */
+}
+
+/* Styles supplémentaires pour le texte si nécessaire */
+h1 { 
+  font-size: large; /* Ajustez la taille selon les besoins */
+  color: white; 
+  margin-bottom: 10px;
+}
+p { 
+  font-size: medium; /* Ajustez la taille selon les besoins */
+  color: white;
+}
