@@ -172,17 +172,3 @@ nav {
   width: auto; /* Ajustez en fonction des exigences de taille réelles */
   height: auto; /* Ajustez en fonction des exigences de taille réelles */
 }
-
-/* Animation de rotation */
-.rotating-svg {
-  animation: rotation 2s infinite linear;
-}
-
-@keyframes rotating-svg {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
