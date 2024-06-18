@@ -9,22 +9,20 @@
 <body>
 <header>
     <nav>
-        <div class="menu-left">
-                <ul class="nav-links">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#demarche">Démarche responsable</a></li>                      
-                </ul>
-        </div>
         <div class="logo">
             <img src="./images/Logo_reboot.svg" alt="Logo du site reboot">
         </div>
-        <div class="menu-right">
+        <div class="menu">
+            <ul class="nav-links">
+                <li><a href="#demarche">Démarche responsable</a></li>   
+                <li><a href="#blog">Blog</a></li>
+            </ul>
             <button class="phone-button">
-                <span class="phone-icon"><img src="./images/picto/phone.svg" alt="Phone Icon"> 06 56 24 46 24</span>
+                <img src="./images/picto/phone.svg" alt="Phone Icon"> 06 56 24 46 24
             </button>
             <button class="cta">
-                <span>Voir nos services <img src="./images/picto/arrow-right-roud.svg" alt="arrow right"></span>
-            </button>        
+                Voir nos services <img src="./images/picto/arrow-right-round.svg" alt="Icône flèche vers la droite" class="cta-icon">
+            </button>      
         </div>
     </nav>
 </header>
@@ -32,56 +30,52 @@
 <main>
     <section class="hero">
         <div class="hero-content">
+            <div class="picto-repeat">
+                <img src="./images/picto/repeat_rebooot.svg" alt="Symbole de Reboot" class="rotating-svg">
+                <img src="./images/picto/repeat_rebooot.svg" alt="Symbole de Reboot" class="rotating-svg">                
+            </div>
             <h1>Réparez, Redémarrez, Réinventez</h1>
             <p class="description">Réparation et dépannage d'électroniques - Pour un futur durable, sans déchet.</p>
-            <button class="cta">
-                <span>Prendre Rendez-vous <img src="./images/picto/arrow-right-roud.svg" alt="arrow right">
-                </span>
-            </button>
-        </div>
-    </section>
-    <section class="product-display">
-        <div class="display-content">
-            <h1>Réparez, Redémarrez, Réinventez</h1>
-            <p class="description">Réparation et dépannage d'électroniques - Pour un futur durable, sans déchet.</p>
-            <button class="cta">
-                <span>Prendre Rendez-vous <img src="./images/picto/arrow-right-roud.svg" alt="arrow right">
-                </span>
-            </button>
         </div>
         <div class="product-container" style="display: flex; justify-content: space-around;">
           <div class="product-card">
-            <img src="./images/dyson_hero.png" alt="Aspirateur balai sans fil">
+            <img src="./images/dyson_hero.png" alt="Aspirateur balai sans fil" class="first-position">
           </div>
           <div class="product-card">
-            <img src="./images/aspi_hero.png" alt="Aspirateur robot">
+            <img src="./images/aspi_hero.png" alt="Aspirateur robot" class="second-position">
           </div>
           <div class="product-card">
-            <img src="./images/four_hero.png" alt="Four avec plaques de cuisson">
+            <img src="./images/four_hero.png" alt="Four avec plaques de cuisson" class="third-position">
           </div>
           <div class="product-card">
-            <img src="./images/cafe_hero.png" alt="Machine à espresso">
+            <img src="./images/cafe_hero.png" alt="Machine à espresso" class="first-position">
           </div>
         </div>
     </section>
     <section id="services">
         <div class="service-card">
-          <img src="./images/picto/map-marker.svg" alt="Icône Boutique">
-          <h2>Rendez-vous en boutique</h2>
-          <p>Passez nous voir dans nos boutiques, nos experts sont prêts à redonner vie à vos objets.</p>
-          <button>Nous contacter</button>
+             <img src="./images/picto/map-marker.svg" alt="Icône Boutique">
+             <h2>Rendez-vous en boutique</h2>
+             <p>Passez nous voir dans nos boutiques, nos experts sont prêts à redonner vie à vos objets.</p>
+            <button class="cta">
+                Nous contacter
+            </button> 
         </div>
         <div class="service-card">
           <img src="./images/picto/tools.svg" alt="Icône Dépannage">
-          <h2>Dépannage à domicile</h2>
-          <p>Besoin d'aide chez vous ? Notre équipe se déplace pour un dépannage rapide et fiable.</p>
-          <button>Prendre RDV</button>
+            <h2>Dépannage à domicile</h2>
+            <p>Besoin d'aide chez vous ? Notre équipe se déplace pour un dépannage rapide et fiable.</p>
+            <button class="cta">
+            Prendre RDV
+            </button> 
         </div>
         <div class="service-card">
-          <img src="./images/picto/gift.svg" alt="Icône Don">
-          <h2>Donner mon appareil</h2>
-          <p>Reprise gratuite et dans la pièce de votre choix.</p>
-          <button>Se rendre en boutique</button>
+            <img src="./images/picto/gift.svg" alt="Icône Don">
+            <h2>Donner mon appareil</h2>
+            <p>Reprise gratuite et dans la pièce de votre choix.</p>
+            <button class="cta">
+                Se rendre en boutique
+            </button> 
         </div>
     </section>
     <section class="stats">

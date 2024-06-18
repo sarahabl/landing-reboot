@@ -2,9 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
+*{
+  margin:0;
+  padding:0
+  box-sizing:border-box;
+}
+
 h1, h2, h3 {
   font-family: 'Bricolage Grotesque', sans-serif;
-  font-weight: bold;
+  font-weight: ExtraBold;
 }
 
 p, ul, li, button, form, a {
@@ -16,72 +22,106 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Colors */
+:root {
+  --grey: #F2F2F2;
+  --main:#9788F6;
+  --action:#F2FF46;
+  --action-secondary:#1A3837;
+  --black:#272729;
+  --secondary:#892FFF;
+  --gradient: radial-gradient(50% 50% at 50% 50%, #892FFF 0%, #AD47FF 100%);
 
 /* Boutons */
 .cta {
+  background-color: var(--action);
+  border: none;
+  border-radius: 25px;
+  color: var(--black);
+  padding: 10px 20px;
+  text-align: center;
   display: flex;
+  font-size: 16px;
+  margin: 16px 18px;
+  cursor: pointer;
   flex-direction: row;
   align-items: center;
-  padding: 10px 16px;
-  gap: 16px;
-  margin: 0 auto;
-  width: auto;
-  height: auto;
-  background: #F2FF46;
-  border-radius: 100px;
-  border: none;
   justify-content: space-evenly;
-  min-width: 175px;
+  gap: 16px;
 }
+
+.a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+.cta-icon {
+  vertical-align: middle;
+  margin-right: 10px; 
+}
+
+.cta:hover{
+  gap:40px;
+}
+
 
 /* Navigation */
 nav {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 140px;
-    gap:40px;
-  }
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 120px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  display: flex;
+}
   
-  .menu-left, .menu-right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap:40px;
-  }
+.menu {
+  display: flex;
+  justify-content: center;
+  gap:40px;
+  font-size: 16px;
+}
   
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-  }
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:40px;
+}
   
-  .nav-links li a {
-    text-decoration: none;
-    color: #1A3837;
-  }
-  
-  .logo img {
-    max-width: 150px;
-  }
-  
-  .phone-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #1A3837;
-    font-weight: bold;
-    min-width: 140px;
-  }
+.nav-links li a {
+  text-decoration: none;
+  color: var(--action-secondary);
+}
+
+.logo img {
+  max-height: 30px;
+}
+
+.phone-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--action-secondary);
+  font-weight: bold;
+  min-width: 140px;
+  font-size: 16px;
+}
+
+.photo-button {
+  color:var(--action-secondary);
+}
 
 
 /* Hero */
 .hero {
-  background-color: #F2F2F2; 
+  background-color: var(--grey); 
   text-align: center;
   display: flex;
   align-content: flex-end;
@@ -89,26 +129,38 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   padding: 120px 140px;
+  flex-direction: column;
+}
+
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-content img{
+  max-width: 150px;
 }
 
 .hero-content h1 {
   font-size: 80px;
-  color: #272729;
+  color: var(--black);
   text-align: center;
 }
 
 .description {
   font-size: 18px;
-  color: #272729; 
+  color: var(--black); 
   margin-bottom: 40px;
   text-align: center;
 }
 
 /* Display cartes produits */
 .product-display {
-  background-color: #7C4DFF; /* ou toute autre couleur violette correspondante */
+  background-color: --secondary;
   padding: 20px;
   text-align: center;
+  color:white;
 }
 
 .product-container {
@@ -116,23 +168,21 @@ nav {
   justify-content: space-around;
 }
 
-.product-card {
-  border: solid white; /* Ajustez la largeur selon les besoins */
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Ajustez la taille et la couleur selon les besoins */
-}
-
 .product-card img {
   width: auto; /* Ajustez en fonction des exigences de taille réelles */
   height: auto; /* Ajustez en fonction des exigences de taille réelles */
 }
 
-/* Styles supplémentaires pour le texte si nécessaire */
-h1 { 
-  font-size: large; /* Ajustez la taille selon les besoins */
-  color: white; 
-  margin-bottom: 10px;
+/* Animation de rotation */
+.rotating-svg {
+  animation: rotation 2s infinite linear;
 }
-p { 
-  font-size: medium; /* Ajustez la taille selon les besoins */
-  color: white;
+
+@keyframes rotating-svg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
