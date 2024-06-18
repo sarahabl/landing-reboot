@@ -86,22 +86,24 @@
         </div>
     </section>
     <section class="stats">
-        <h2>Pourquoi nous faire confiance?</h2>
-        <div class="stat-item">
-            <span class="number">8,700</span>
-            <span class="description">Objets réparés depuis 2020</span>
-        </div>
-        <div class="stat-item">
-            <span class="number">40</span>
-            <span class="description">Marques qui nous font confiance</span>
-        </div>
-        <div class="stat-item">
-            <span class="number">684</span>
-            <span class="description">Avis 5 étoiles</span>
+        <div class="chiffres">
+            <h2>Pourquoi nous faire confiance?</h2>
+            <div class="stat-item">
+                <span class="number">8,700</span>
+                <p>Objets réparés depuis 2020</p>
+            </div>
+            <div class="stat-item">
+                <span class="number">40</span>
+                <p>Marques qui nous font confiance</p>
+            </div>
+            <div class="stat-item">
+                <span class="number">684</span>
+                <p>Avis 5 étoiles</p>
+            </div>
         </div>
     </section>
     <section class="partners">
-        <h2>Les marques avec lesquelles nous travaillons</h2>
+        <h3>Les marques avec lesquelles nous travaillons</h3>
         <div class="logos">
             <img src="./images/logo_marques/dyson.png" alt="Logo Dyson">
             <img src="./images/logo_marques/sauter.png" alt="Logo Sauter">
@@ -112,7 +114,7 @@
             <img src="./images/logo_marques/whirlpool.png" alt="Logo Whirlpool">
         </div>
     </section>
-    <section class="demarche">
+    <section id="demarche">
         <div class="left">
             <h2>Une démarche responsable pour un avenir durable</h2>
             <p>Chez Reboot, nous croyons en un avenir sans déchets. Nos services de réparation visent à prolonger la durée de vie de vos appareils et à réduire le gaspillage électronique. Chaque réparation est un pas vers un monde plus durable.</p>
@@ -142,28 +144,39 @@
             <button class="slider-arrow-left">
                 <img src="./images/picto/arrow-left.svg" alt="Arrow Icon">
             </button>
-            <div class="testimonial">
-                <div class="stars">
-                    <!-- Ici, vous pouvez utiliser des images ou des icônes pour les étoiles -->
-                    ★★★★★
-                </div>
-                <blockquote>"Service incroyable! Mon lave-vaisselle est comme neuf grâce à Reboot."</blockquote>
+            <div class="testimonial-item">
+                <span class="stars">
+                    <img src="./images/picto/star.svg" class=yellow alt="Arrow Icon">
+                    <img src="./images/picto/star.svg" class=yellow alt="Arrow Icon">
+                    <img src="./images/picto/star.svg" class=yellow alt="Arrow Icon">
+                    <img src="./images/picto/star.svg" class=yellow alt="Arrow Icon">
+                    <img src="./images/picto/star.svg" class=yellow alt="Arrow Icon">
+                </span>
+                <p>"Service incroyable! Mon lave-vaisselle est comme neuf grâce à Reboot."</p>
                 <hr>
                 <p>Nathalie F. - 12/24</p>
             </div>
-            <div class="testimonial">
-                <div class="stars">
-                    ★★★★★
-                </div>
-                <blockquote>"Rapides et professionnels, je recommande vivement leurs services."</blockquote>
+            <div class="testimonial-item">
+                <span class="stars">
+                    <img src="./images/picto/star.svg" class=yellow alt="Arrow Icon">
+                    <img src="./images/picto/star.svg" class=yellow alt="Arrow Icon">
+                    <img src="./images/picto/star.svg" class=yellow alt="Arrow Icon">
+                    <img src="./images/picto/star.svg" class=yellow alt="Arrow Icon">
+                    <img src="./images/picto/star.svg" class=yellow alt="Arrow Icon">
+                </span>
+                <p>"Rapides et professionnels, je recommande vivement leurs services."</p>
                 <hr>
                 <p>Marc L. - 12/24</p>
             </div>
-            <div class="testimonial">
-                <div class="stars">
-                    ★★★★★
-                </div>
-                <blockquote>"Les tutoriels sont super utiles, je vais réparer mon aspirateur moi-même."</blockquote>
+            <div class="testimonial-item">
+                <span class="stars">
+                    <img src="./images/picto/star.svg" class=yellow alt="Arrow Icon">
+                    <img src="./images/picto/star.svg" class=yellow alt="Arrow Icon">
+                    <img src="./images/picto/star.svg" class=yellow alt="Arrow Icon">
+                    <img src="./images/picto/star.svg" class=yellow alt="Arrow Icon">
+                    <img src="./images/picto/star.svg" class=grey alt="Arrow Icon">
+                </span>
+                <p>"Les tutoriels sont super utiles, je vais réparer mon aspirateur moi-même."</p>
                 <hr>
                 <p>Julie M. - 12/23</p>
             </div>
@@ -174,24 +187,29 @@
     </section>
     <section class="blog-section">
         <h2>Dernières tips de Reboot</h2>
-        <div class="blog-post">
-          <img src="./images/articles/article1.png" alt="Lave-linge">
-          <h3>Comment prolonger la durée de vie de votre lave-linge?</h3>
-          <p>11/06/2024 - Rennes</p>
-        </div>
-        <div class="blog-post">
-            <img src="./images/articles/article2.png" alt="Robert">
-            <h3>Les avantages de réparer plutôt que remplacer</h3>
-            <p>15/05/2024 - Rennes</p>
-        </div>
-        <div class="blog-post">
-            <img src="./images/articles/article3.png" alt="aspirateur">
-            <h3>Nos astuces pour un entretien optimal</h3>
-            <p>10/05/2024 - Rennes</p>
+        <div class="blog-grid">
+            <div class="blog-post">
+            <img src="./images/articles/article1.png" alt="Lave-linge">
+            <h3>Comment prolonger la durée de vie de votre lave-linge?</h3>
+            <p>11/06/2024 - Rennes</p>
+            </div>
+            <div class="blog-post">
+                <img src="./images/articles/article2.png" alt="Robert">
+                <h3>Les avantages de réparer plutôt que remplacer</h3>
+                <p>15/05/2024 - Rennes</p>
+            </div>
+            <div class="blog-post">
+                <img src="./images/articles/article3.png" alt="aspirateur">
+                <h3>Nos astuces pour un entretien optimal</h3>
+                <p>10/05/2024 - Rennes</p>
+            </div>
         </div>
     </section>             
 </main>
 <footer class="site-footer">
+    <div class="logo-footer">
+        <img src="./images/Logo_reboot_vert.svg" alt="Reboot Logo">
+    </div>
     <div class="footer-column">
         <h3>Contact</h3>
         <p>123 Rue de la Réparation, 75000 Paris</p>
