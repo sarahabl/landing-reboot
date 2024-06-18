@@ -8,16 +8,6 @@
   box-sizing:border-box;
 }
 
-h1, h2, h3 {
-  font-family: 'Bricolage Grotesque', sans-serif;
-  font-weight: ExtraBold;
-}
-
-p, ul, li, button, form, a {
-  font-family: 'Lato', sans-serif;
-  font-weight: normal;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -48,6 +38,15 @@ h3{
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
+  line-height: normal;
+}
+
+p{
+  color: var(--black, #272729);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
 }
 
@@ -209,19 +208,15 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Changé depuis flex-start */
+  align-items: center;
   gap: 40px;
-}
-
-.titre h2 {
-  color: var(--black);
 }
 
 .presentation-services {
   display: flex;
-  align-items: center; /* Changé depuis flex-start */
+  align-items: center; 
   gap: 40px;
-  align-self: stretch; /* Cela peut nécessiter un ajustement en fonction de la mise en page complète */
+  align-self: stretch; 
 }
 
 .service-card {
@@ -229,23 +224,13 @@ nav {
   padding: 30px;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Changé depuis flex-start */
-  gap: 20px; /* Ajusté depuis 40px pour se rapprocher de l'image */
+  align-items: flex-start;
+  gap: 20px;
   flex: 1 0 0;
   border-radius: 16px;
   background: var(--white, #FFF);
   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08);
-  width: calc(33% - 26px); /* Supposant une distribution égale des cartes avec un espacement de 40px */
-}
-
-.service-card img {
-  align-self: center; /* Centrer les images dans leurs cartes */
-}
-
-.service-card h3,
-.service-card p {
-  color: var(--black);
-  text-align: center; /* Centrer le texte dans leurs cartes */
+  width: calc(33% - 26px);
 }
 
 .cta {
@@ -258,3 +243,34 @@ nav {
   background: var(--action);
 }
 
+/* Stats */
+.stats {
+  background-color: var(--grey);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+
+.stats h2 {
+  color: var(--secondary)
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.stat-item {
+  display: inline-block; /* Alignement des éléments côte à côte */
+  margin-right: 30px; /* Espace entre les éléments de statistiques */
+}
+
+.number {
+  display: block;
+  color: #000000; /* Couleur noire pour les chiffres */
+  font-size: 36px; /* Taille des chiffres */
+  font-weight: bold; /* Texte en gras */
+  margin-bottom: 4px; /* Espace sous les chiffres avant la description */
+}
+
+.description {
+  color: #6C63FF; /* Couleur violette pour la description */
+  font-size: 14px; /* Taille de la description */
+}
