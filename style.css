@@ -187,10 +187,6 @@ nav {
     display: block;
   }
 
-  .burger-button{
-    border: none;
-    background-color: white;
-  }
   .menu{
     display: none;
   }
