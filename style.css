@@ -82,6 +82,7 @@ p{
   --secondary:#892FFF;
   --gradient: radial-gradient(50% 50% at 50% 50%, #892FFF 0%, #AD47FF 100%);
 }
+
 /* Boutons */
 .cta {
   background-color: var(--action);
@@ -292,14 +293,26 @@ nav {
 
 .logos {
   display: flex;
-  width: 100%;
   padding: 2% 0;
   justify-content: space-around;
+  animation:scroll 20s linear infinite;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-200px*3));
+  }
 }
 
 .logos img {
   height: 100px;
   margin-right: 20px;
+  width: 200px;
 }
 
 /* Demarche */
