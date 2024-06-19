@@ -19,3 +19,4 @@ window.addEventListener('scroll', () => {
             img.style.transform = 'translateY(0)'; // Effet de flottement initial
     });
 });
+

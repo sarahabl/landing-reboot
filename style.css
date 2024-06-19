@@ -123,9 +123,11 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px 120px;
+  padding: 1% 2%;
   flex-wrap: nowrap;
   flex-direction: row;
+  gap: 20px;
+  width: 100%;
 }
   
 .menu {
@@ -171,6 +173,28 @@ nav {
   color:var(--action-secondary);
 }
 
+.burger-button-container{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav{
+    justify-content: space-between;
+    padding: 4%;
+  }
+
+  .burger-button-container{
+    display: block;
+  }
+
+  .burger-button{
+    border: none;
+    background-color: white;
+  }
+  .menu{
+    display: none;
+  }
+}
 
 /* Hero */
 .hero {
@@ -224,25 +248,6 @@ nav {
   }
 }
 
-/* Display cartes produits */
-.product-display {
-  background-color: var(--secondary);
-  padding: 20px;
-  text-align: center;
-  color:white;
-}
-
-.product-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.product-card img {
-  width: auto; /* Ajustez en fonction des exigences de taille réelles */
-  height: auto; /* Ajustez en fonction des exigences de taille réelles */
-}
-
-
 
 /* Services */
 #services {
@@ -271,7 +276,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
+  gap: 40px;
   flex: 1 0 0;
   border-radius: 16px;
   background: var(--white, #FFF);
@@ -279,6 +284,25 @@ nav {
   width: calc(33% - 30px);
   height: 350px;
 }
+
+@media (max-width: 768px) {
+  #services{
+    padding: 10%;
+  }
+  .presentation-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .service-card{
+    width: 100%;
+  }
+}
+
+
 
 /* Stats */
 .chiffres {
@@ -303,6 +327,29 @@ nav {
   flex-direction: column;
   margin-right: 30px;
 }
+
+@media (max-width: 768px) {
+  .stats{
+    width: 100%;
+    display:flex;
+
+  }
+  .chiffres{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+  .chiffres h2, .number, p{
+    align-self: center;
+  }
+  
+}
+
+
 
 /* Conteneur pour les logos */
 .partners {
