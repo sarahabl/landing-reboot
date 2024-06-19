@@ -442,21 +442,15 @@ nav {
   background-color: var(--grey);
 }
 
+.testimonials h3{
+  align-self: center;
+}
+
 .slider-testimonial{
   display: flex;
   align-items: center;
   gap: 40px;
   width: auto;
-}
-
-.slider-arrow-left, .slider-arrow-right{
-  display: flex;
-  padding: 16px 18px;
-  align-items: center;
-  gap: 10px;
-  border-radius: 100px;
-  border:none;
-  background-color: var(--action);
 }
 
 .testimonial-item{
@@ -469,6 +463,9 @@ nav {
   border-radius: 16px;
   background-color: white;
   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08);
+  animation:scroll 20s linear infinite;
+  overflow: hidden;
+  width:300px;
 }
 
 .yellow{
@@ -489,9 +486,19 @@ hr {
   width: 100%;
 }
 
+
+@keyframes testimonial-item scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(300px*8));
+  }
+}
+
 /* Blog */
 
-.blog-section{
+#blog{
   display: flex;
   padding: 8%;
   flex-direction: column;
