@@ -285,6 +285,10 @@ nav {
   height: 350px;
 }
 
+.service-card:hover{
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
 .service-card .cta:hover{
   background-color:var(--action-secondary);
   color:white;
@@ -405,6 +409,8 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  flex-wrap: nowrap;
+  align-items: flex-start;
 }
 
 #demarche h2 {
@@ -462,7 +468,6 @@ nav {
   align-self: stretch;
   border-radius: 16px;
   background-color: white;
-  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08);
   animation:scroll 20s linear infinite;
   overflow: hidden;
   width:300px;
@@ -527,7 +532,13 @@ hr {
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-  width: 350px;
+  width: 375px;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}
+
+.blog-post:hover{
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 .blog-post h3{
@@ -535,8 +546,17 @@ hr {
 }
 
 .blog-post img{
-  border-radius: 16px;
-  width:350px;
+  width:100%;
+  height: auto;
+}
+
+.post-info{
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
 }
 
 
