@@ -4,7 +4,7 @@
 
 *{
   margin:0;
-  padding:0
+  padding:0;
   box-sizing:border-box;
 }
 
@@ -81,7 +81,7 @@ p{
   --black:#272729;
   --secondary:#892FFF;
   --gradient: radial-gradient(50% 50% at 50% 50%, #892FFF 0%, #AD47FF 100%);
-
+}
 /* Boutons */
 .cta {
   background-color: var(--action);
@@ -125,7 +125,6 @@ nav {
   padding: 10px 120px;
   flex-wrap: nowrap;
   flex-direction: row;
-  display: flex;
 }
   
 .menu {
@@ -205,7 +204,7 @@ nav {
 
 /* Display cartes produits */
 .product-display {
-  background-color: --secondary;
+  background-color: var(--secondary);
   padding: 20px;
   text-align: center;
   color:white;
