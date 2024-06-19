@@ -437,6 +437,30 @@ nav {
   color:var(--black);
 }
 
+@media (max-width: 685px) {
+  #demarche{
+    display: flex;
+    flex-direction: column;
+    padding: 8% 0% 0% 2px;
+  }
+  
+  #demarche .left{
+    width: 100%;
+    padding: 0% 4%;
+  }
+  
+  #demarche .right{
+    width: 100%;
+    gap:2px;
+  }
+
+  .box{
+    border-radius: 0px;
+  }
+}
+
+
+
 /* Témoignages */
 .testimonials{
   display: flex;
@@ -559,6 +583,11 @@ hr {
   align-self: stretch;
 }
 
+@media (max-width: 768px) {
+  #blog{
+    display: none;
+  }
+}
 
 /* Footer */
 
@@ -580,7 +609,6 @@ footer p{
   font-size:14px;
 }
 
-
 .logo-footer{
   color:white;
 }
@@ -596,4 +624,29 @@ footer a {
   color: white;
   font-family: Lato;
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .logo-footer{
+    display: none;
+  }
+
+  .footer-column{
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer p {
+    align-self:flex-start;
+  }
+}
+
+
+@media (max-width: 650px) {
+  footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
 }
