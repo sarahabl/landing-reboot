@@ -245,6 +245,7 @@ nav {
 }
 
 
+
 /* Services */
 #services {
   background-color: var(--grey);
@@ -313,10 +314,10 @@ nav {
 .chiffres {
   background-color: white;
   display: flex;
-  padding: 10%;
-  width: 80%;
+  padding: 5% 10%;
+  width: 85%;
   border-radius: 0px 100px 100px 0px;
-  gap: 40px;
+  gap: 60px;
   align-items: center;
 }
 
@@ -333,28 +334,34 @@ nav {
   margin-right: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 940px) {
   .stats{
     width: 100%;
     display:flex;
-
+    align-content: flex-start;
   }
   .chiffres{
     width: 100%;
     display: flex;
     flex-direction: column;
-    border-radius: 0px;
-    align-items: center;
-    justify-content: flex-start;
     flex-wrap: nowrap;
+    border-radius: 0px;
   }
+
   .chiffres h2, .number, p{
     align-self: center;
   }
+
+  .h2{
+    width: 400px;
+  }
+
+  .stat-item{
+    width: 200px;
+  }
+  
   
 }
-
-
 
 /* Conteneur pour les logos */
 .partners {
@@ -414,6 +421,12 @@ nav {
   flex-wrap: nowrap;
   align-items: flex-start;
 }
+
+/* #demarche .right{
+  height: 375px;
+  overflow-y: scroll;
+} */
+
 
 #demarche h2 {
   color: white;
@@ -518,7 +531,7 @@ hr {
 }
 
 
-@keyframes testimonial-item scroll {
+@keyframes testimonial-item-scroll {
   0%{
     transform: translateX(0);
   }
