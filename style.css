@@ -181,7 +181,7 @@ nav {
   flex-direction: row-reverse;
   justify-content: space-evenly;
   align-items: center;
-  padding: 120px 140px;
+  padding: 10% 8%;
   flex-direction: column;
 }
 
@@ -189,11 +189,12 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap:20px;
 }
 
 .hero-content img{
   max-width: 150px;
+  padding:4%;
 }
 
 .description {
@@ -201,6 +202,26 @@ nav {
   color: var(--black); 
   margin-bottom: 40px;
   text-align: center;
+}
+
+.picto-repeat{
+  gap: 20px;
+  display: flex;
+}
+
+.rotating-svg{
+  transform-origin: center; /* Origine de la rotation est au centre */
+  transform: translate(-100%, -100%) rotate(0deg);
+  animation: rotateClockwise 2s infinite linear;
+}
+
+@keyframes rotateClockwise {
+  0% {
+      transform: translate(-50%, -100%) rotate(0deg); /* Rotation initiale */
+  }
+  100% {
+      transform: translate(-50%, -100%) rotate(360deg); /* Rotation complète (360 degrés) */
+  }
 }
 
 /* Display cartes produits */
@@ -220,6 +241,8 @@ nav {
   width: auto; /* Ajustez en fonction des exigences de taille réelles */
   height: auto; /* Ajustez en fonction des exigences de taille réelles */
 }
+
+
 
 /* Services */
 #services {
@@ -254,6 +277,7 @@ nav {
   background: var(--white, #FFF);
   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08);
   width: calc(33% - 30px);
+  height: 350px;
 }
 
 /* Stats */
@@ -461,9 +485,10 @@ hr {
 
 footer{
   background-color: var(--action-secondary);
-  padding:4% 10%;
+  padding: 4% 10%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 40px;
 }
 
 footer h3{
@@ -475,6 +500,7 @@ footer p{
   color:white;
   font-size:14px;
 }
+
 
 .logo-footer{
   color:white;
@@ -490,5 +516,5 @@ footer a {
   text-decoration: none;
   color: white;
   font-family: Lato;
-  font-size: 18px;
+  font-size: 14px;
 }
