@@ -317,7 +317,7 @@ nav {
 .chiffres {
   background-color: white;
   display: flex;
-  padding: 4% 10%;
+  padding: 10%;
   width: 80%;
   border-radius: 0px 100px 100px 0px;
   gap: 40px;
@@ -393,6 +393,12 @@ nav {
   height: 100px;
   margin-right: 20px;
   width: 200px;
+}
+
+@media (max-width: 650px) {
+  .partners{
+    display:none;
+  }
 }
 
 /* Demarche */
