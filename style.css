@@ -360,7 +360,6 @@ nav {
     width: 200px;
   }
   
-  
 }
 
 /* Conteneur pour les logos */
@@ -398,11 +397,11 @@ nav {
   width: 200px;
 }
 
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
   .partners{
     display:none;
   }
-}
+} */
 
 /* Demarche */
 #demarche {
@@ -598,11 +597,11 @@ hr {
   align-self: stretch;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   #blog{
     display: none;
   }
-}
+} */
 
 /* Footer */
 
@@ -641,10 +640,10 @@ footer a {
   font-size: 14px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .logo-footer{
-    display: none;
-  }
+    display:;
+  } */
 
   .footer-column{
     display: flex;
