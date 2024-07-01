@@ -194,22 +194,26 @@ nav {
 
 /* Hero */
 .hero {
-  background-color: var(--grey); 
   text-align: center;
   display: flex;
-  align-content: flex-end;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 10% 8%;
-  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  background: var(--gradient);
+}
+
+.hero h1{
+  transition: color 0.3s ease;
+  text-align: left;
 }
 
 .hero-content{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap:20px;
+  padding: 4%;
 }
 
 .hero-content img{
@@ -221,7 +225,7 @@ nav {
   font-size: 18px;
   color: var(--black); 
   margin-bottom: 40px;
-  text-align: center;
+  text-align: left;
 }
 
 .picto-repeat{
@@ -230,20 +234,53 @@ nav {
 }
 
 .rotating-svg{
-  transform-origin: center; /* Origine de la rotation est au centre */
+  transform-origin: center;
   transform: translate(-100%, -100%) rotate(0deg);
   animation: rotateClockwise 2s infinite linear;
 }
 
-@keyframes rotateClockwise {
-  0% {
-      transform: translate(-50%, -100%) rotate(0deg); /* Rotation initiale */
-  }
-  100% {
-      transform: translate(-50%, -100%) rotate(360deg); /* Rotation complète (360 degrés) */
-  }
+.image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  right: 0;
 }
 
+.scroll-image {
+  width: 80%;
+  max-width: 800px;
+  margin: 100px 0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-image.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes rotateClockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 748px) {
+  .hero {
+    padding: 40px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+}
 
 
 /* Services */
@@ -359,6 +396,7 @@ nav {
   .stat-item{
     width: 200px;
   }
+  
   
 }
 
