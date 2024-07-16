@@ -74,6 +74,24 @@ p {
   line-height: normal;
 }
 
+@media (max-width: 748px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
 /* Colors */
 :root {
   --grey: #f2f2f2;
@@ -277,18 +295,10 @@ nav {
 
 @media (max-width: 748px) {
   .hero {
-    padding: 40px 20px;
+    padding: 10%;
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
   }
 
   .hero-content-right {
@@ -357,6 +367,7 @@ nav {
 
   .service-card {
     width: 100%;
+    padding: 10%;
   }
 }
 
@@ -397,6 +408,7 @@ nav {
     flex-direction: column;
     flex-wrap: nowrap;
     border-radius: 0px;
+    padding: 10%;
   }
 
   .chiffres h2,
@@ -450,6 +462,12 @@ nav {
   width: 200px;
 }
 
+@media (max-width: 768px) {
+  .partners {
+    padding: 10%;
+  }
+}
+
 /* Approach */
 #demarche {
   display: flex;
@@ -497,12 +515,12 @@ nav {
   #demarche {
     display: flex;
     flex-direction: column;
-    padding: 8% 0% 0% 2px;
+    padding: 10%;
   }
 
   #demarche .left {
     width: 100%;
-    padding: 0% 4%;
+    padding: 0%;
   }
 
   #demarche .right {
@@ -579,6 +597,12 @@ hr {
   }
 }
 
+@media (max-width: 685px) {
+  .testimonials {
+    padding: 10%;
+  }
+
+
 /* Blog */
 #blog {
   display: flex;
@@ -636,6 +660,22 @@ hr {
   align-self: stretch;
 }
 
+@media (max-width: 768px) {
+  .blog-container {
+    flex-direction: column;
+    padding: 4%;
+  }
+
+  .blog-post h3 {
+    width: auto;
+  }
+
+  .blog-post {
+    width: auto;
+  }
+}
+
+
 /* Footer */
 footer {
   background-color: var(--action-secondary);
@@ -676,6 +716,11 @@ footer a {
   footer {
     display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+
+  footer p {
+    text-align: left;
     width: 100%;
   }
 }
