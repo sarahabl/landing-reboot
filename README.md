@@ -14,9 +14,10 @@ La maquette Figma utilisée pour ce projet est disponible [ici](https://www.figm
 
 Pour installer ce projet localement, vous pouvez suivre les étapes suivantes :
 
-'git clone https://github.com/sarahabl/landing-reboot.git
+```bash
+git clone https://github.com/sarahabl/landing-reboot.git
 cd landing-reboot'
-
+```
 
 ## Utilisation
 
