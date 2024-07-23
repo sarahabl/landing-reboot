@@ -429,7 +429,7 @@ nav {
 /* Partners */
 .partners {
   display: flex;
-  padding: 4% 0%;
+  padding: 4% 0;
   flex-direction: column;
   gap: 40px;
   background-color: var(--grey);
@@ -437,34 +437,46 @@ nav {
   align-items: center;
 }
 
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
 .logos {
   display: flex;
-  padding: 2% 0;
-  justify-content: space-around;
   animation: scroll 20s linear infinite;
-  border-radius: 100px;
-  overflow: hidden;
 }
 
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
-
   100% {
-    transform: translateX(calc(-200px * 3));
+    transform: translateX(calc(-200px * 7));
   }
 }
 
 .logos img {
   height: 100px;
-  margin-right: 20px;
   width: 200px;
+  margin-right: 20px;
 }
 
 @media (max-width: 768px) {
   .partners {
     padding: 10%;
+  }
+
+  .logos {
+    animation: scroll 40s linear infinite;
+  }
+
+  .logos img {
+    height: 50px;
+    width: 100px;
   }
 }
 
