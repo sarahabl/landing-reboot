@@ -303,7 +303,7 @@ nav {
   }
 
   .hero-content-right {
-    overflow: hidden;
+    display:none;
   }
 }
 
