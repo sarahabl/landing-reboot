@@ -220,6 +220,7 @@ nav {
   padding: 0% 0% 0% 10%;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .hero h1 {
@@ -302,7 +303,7 @@ nav {
   }
 
   .hero-content-right {
-    display: none;
+    overflow: hidden;
   }
 }
 
