@@ -448,7 +448,7 @@ nav {
 
 .logos {
   display: flex;
-  animation: scroll 20s linear infinite;
+  animation: scroll 100s linear infinite;
 }
 
 @keyframes scroll {
